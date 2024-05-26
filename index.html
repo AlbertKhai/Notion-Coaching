@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, have a good day 😄</h1>
+  </header>
+  <main class="ex-list">
+
+    <section class="ex-item">
+      <h2>
+        <span class="done">#</span>
+        <a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-01">1. Làm quen với HTML</a>
+      </h2>
+      <ul>
+        <li>
+          <a href="./1/1.1/index.html">1.1 Vai trò của HTML, CSS, Javascript</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <script>
+    var listLink = document.querySelectorAll("a");
+    listLink.forEach((link) => {
+      if (!link.hasAttribute("target")) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noreferrer noopener");
+      }
+    })
+  </script>
+</body>
+
+</html>

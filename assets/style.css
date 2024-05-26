@@ -1,0 +1,108 @@
+ :root {
+      --primary-icon: #05cfff;
+      --primary-color: #d7d7dc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: #030d22;
+      color: var(--primary-color);
+    }
+
+    main {
+      width: 1300px;
+      max-width: calc(100% - 48px);
+      margin: 40px auto;
+    }
+
+    h1 {
+      padding-top: 40px;
+      font-family: "Itim", cursive;
+      text-align: center;
+      font-weight: 400;
+      font-size: 2.3rem;
+      color: var(--primary-icon);
+    }
+
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin-top: 0;
+      padding-left: 55px;
+    }
+
+    li {
+      color: var(--primary-icon);
+    }
+
+    a {
+      display: inline-block;
+      padding: 5px 0;
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--primary-icon);
+    }
+
+    .ex-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      transform: translateX(-1.4%);
+    }
+
+    .ex-item {
+      flex: 0 1 30%;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+    }
+
+
+    .done {
+      display: inline-block;
+      min-width: 27px;
+      font-size: 23px;
+      color: var(--primary-icon);
+    }
+
+    .not-done {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-right: 18px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: -8px 0 #fff, 8px 0 #fff;
+      animation: shadowPulse 2s linear infinite;
+    }
+
+    @keyframes shadowPulse {
+      33% {
+        background: #fff;
+        box-shadow: -8px 0 var(--primary-icon), 8px 0 #fff;
+      }
+
+      66% {
+        background: var(--primary-icon);
+        box-shadow: -8px 0 #fff, 8px 0 #fff;
+      }
+
+      100% {
+        background: #fff;
+        box-shadow: -8px 0 #fff, 8px 0 var(--primary-icon);
+      }
+    }
